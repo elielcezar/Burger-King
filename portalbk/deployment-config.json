@@ -1,0 +1,9 @@
+{
+    "type": "ftp",
+    "host": "ftp.furiapr.com.br",
+    "username": "tfi",
+    "password": "#web001#",
+    "port": 21,
+    "remotePath": "/public_html/sites/all/themes/tfi2017",
+    "uploadOnSave": true
+}

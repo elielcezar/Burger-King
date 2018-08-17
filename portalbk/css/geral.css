@@ -1,0 +1,437 @@
+body {
+  font-family: 'Open Sans',serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2d2d2d;
+}
+
+h3 {
+  color: #2d2d2d;
+  font-weight: 600;
+  font-size: 21px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  color: #ed7901;
+  font-weight: 600;
+}
+
+a:hover {
+  color: #2d2d2d;
+}
+
+button,
+.btn,
+button.btn-primary,
+.btn-info {
+  background: #ed7901;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 0;
+  font-size: 18px;
+  border: none;
+  color: #fff;
+}
+
+button:hover,
+.btn:hover,
+button.btn-primary:hover,
+.btn-info:hover {
+  background: #2d2d2d;
+  color: #fff;
+}
+
+.principal {
+  float: left;
+  width: 100%;
+  padding-top: 100px;
+}
+
+.principal h1#page-title {
+  font-weight: 700;
+  text-align: center;
+  margin: 80px 0 50px 0;
+  display: none;
+}
+
+.nav-tabs {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* paginacao */
+.pagination > li:first-child > span,
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  background-color: #1d5691;
+  border-color: #1d5691;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+  color: #1d5691;
+}
+
+.help-block,
+.ckeditor_links {
+  display: none !important;
+}
+
+/*--- TOPO -----------------------------------------------*/
+header {
+  width: 100%;
+  float: left;
+  background: transparent url(../img/header-footer.png) center 26px repeat-x;
+}
+
+header #block-system-main-menu {
+  float: left;
+  width: 100%;
+}
+
+header .logo {
+  float: left;
+  margin-top: 20px;
+}
+
+header .logo a {
+  display: block;
+  text-indent: -5000em;
+  width: 104px;
+  height: 104px;
+  background: transparent url(../img/logo-bk.png) top center no-repeat;
+  background-size: 100%;
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: 26px;
+  text-transform: uppercase;
+  margin: 55px 25px 0 25px;
+  float: left;
+  color: #fff;
+  text-align: center;
+}
+
+header .region-header {
+  float: left;
+  width: 100%;
+}
+
+header ul.menu.nav {
+  display: block;
+  width: 100%;
+  background: transparent;
+  float: left;
+  text-align: center;
+  margin: 5px 0 10px 0;
+}
+
+header ul.menu.nav li {
+  width: auto;
+  display: inline-block;
+  text-align: center;
+  font-size: 16px;
+}
+
+header ul.menu.nav li a {
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  transition: all .2s;
+}
+
+@media (max-width: 1199px) {
+  header ul.menu.nav li a {
+    padding: 3.7vh 0 !important;
+  }
+}
+
+header ul.menu.nav li a:hover {
+  background: #e45800;
+  color: #fff;
+}
+
+header ul.menu.nav li.active a {
+  background: #ed7901;
+}
+
+/*--- PAGINA GENERICA ----------------------------*/
+.not-front .principal {
+  float: left;
+  width: 100%;
+}
+
+.not-front .principal label {
+  font-weight: 600;
+}
+
+.not-front .principal p {
+  margin-bottom: 25px;
+}
+
+/*--- HOME ------------------------------------------------*/
+.front .principal {
+  float: left;
+  width: 100%;
+}
+
+.front .principal .intro {
+  float: left;
+  margin: 0 0 50px 0;
+}
+
+.front .principal .chamadas h3 {
+  font-weight: 600;
+  color: #fff;
+}
+
+.front .principal .chamadas .col-sm-4 {
+  background: #ed7901;
+  padding: 25px;
+  width: 30%;
+  margin: 1.5%;
+  min-height: 250px;
+}
+
+.front .principal .chamadas .col-sm-4 p {
+  font-weight: normal !important;
+}
+
+.front .principal .chamadas .col-sm-4 a {
+  color: #fff;
+}
+
+.front .principal .chamadas .col-sm-4 a:hover {
+  text-decoration: none;
+}
+
+.front .principal .chamadas .col-sm-4:hover {
+  background: #2d2d2d;
+}
+
+.front.not-logged-in {
+  background: #f5f5f5;
+}
+
+.front.not-logged-in .principal {
+  padding: 50px 0;
+}
+
+.front.not-logged-in .principal .container {
+  max-width: 500px;
+}
+
+.front.not-logged-in .principal .container .block.block-system.clearfix {
+  display: none;
+}
+
+.front.not-logged-in .principal .container #block-user-login {
+  padding: 50px;
+  background: #fff;
+  box-shadow: 3px 3px 3px #ccc;
+  border-radius: 5px;
+}
+
+/*--- MEUS CONTEUDOS ------------------------------------------------*/
+.page-contents .principal .pane-custom.pane-1 {
+  text-align: center;
+  float: left;
+  width: 100%;
+}
+
+.page-contents .principal .pane-custom.pane-1 a {
+  display: inline;
+  background: #ed7901;
+  color: #fff;
+  padding: 20px 50px;
+  font-size: 21px;
+  margin-top: 100px;
+}
+
+.page-contents .principal .pane-views {
+  margin-bottom: 100px;
+}
+
+.page-contents .principal .view-spots-aprovados audio {
+  width: 70%;
+}
+
+/*--- PAGINA DE UM CONTEUDO INDIVIDUAL ------------------------------------------------*/
+.node-type-conteudo #edit-author--2,
+.node-type-conteudo #edit-comment-body .control-label {
+  display: none;
+}
+
+.node-type-conteudo .principal .container {
+  max-width: 900px;
+}
+
+.node-type-conteudo .principal #comments h2.title {
+  margin: 50px 0;
+  background: #f5f5f5;
+  padding: 20px;
+  font-weight: 600;
+}
+
+.node-type-conteudo .principal #comments h2.comment-form {
+  padding: 0;
+  font-weight: normal;
+  background: transparent;
+  margin: 0 0 0 20px;
+}
+
+.node-type-conteudo .principal #comments .comment {
+  position: relative;
+  padding-bottom: 20px;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #ccc;
+}
+
+.node-type-conteudo .principal #comments .comment .content {
+  font-size: 18px;
+}
+
+.node-type-conteudo .principal #comments .comment .submitted {
+  font-size: 12px;
+  position: absolute;
+  bottom: 0;
+}
+
+.node-type-conteudo .principal #comments .comment h3,
+.node-type-conteudo .principal #comments .comment .permalink,
+.node-type-conteudo .principal #comments .comment .links {
+  display: none;
+}
+
+/*--- CRIAR CONTEUDO ------------------------------------------------*/
+.page-node-add-conteudo #edit-field-status,
+.page-node-add-conteudo .ckeditor_links,
+.page-node-add-conteudo #edit-body-und-0-format,
+.page-node-add-conteudo .vertical-tabs {
+  display: none;
+}
+
+.page-node-add-conteudo .principal .container {
+  max-width: 900px;
+}
+
+/*--- EDITAR CONTEUDO ------------------------------------------------*/
+.page-node-edit.node-type-conteudo .ckeditor_links,
+.page-node-edit.node-type-conteudo #edit-body-und-0-format,
+.page-node-edit.node-type-conteudo .vertical-tabs {
+  display: none;
+}
+
+.page-node-edit.node-type-conteudo .principal .container {
+  max-width: 900px;
+}
+
+/*--- EXCLUIR CONTEUDO ------------------------------------------------*/
+.page-node-delete .nav-tabs {
+  display: none;
+}
+
+/*--- SUPORTE FAQ ------------------------------------------------*/
+.page-suporte .principal .container {
+  max-width: 900px;
+}
+
+/*--- AUDIENCIA ------------------------------------------------*/
+.page-playing .principal form {
+  width: 100%;
+  float: left;
+  margin-bottom: 50px;
+}
+
+.page-playing .principal thead {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.page-playing .principal td {
+  text-align: center;
+}
+
+.page-playing .principal td:first-child {
+  text-align: left;
+}
+
+.page-playing .principal a.email {
+  display: inline-block;
+  width: 27px;
+  height: 22px;
+  text-indent: -5000em;
+  margin-right: 25px;
+  background: transparent url(../img/icon-email.png) center center no-repeat;
+}
+
+.page-playing .principal a.wpp {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  text-indent: -5000em;
+  background: transparent url(../img/icon-wpp.png) center center no-repeat;
+}
+
+/*--- EXCLUIR CONTEUDO ------------------------------------------------*/
+.page-node-8 .principal .container {
+  max-width: 900px;
+}
+
+.page-node-8 .principal .tabs,
+.page-node-8 .principal header,
+.page-node-8 .principal .links {
+  display: none;
+}
+
+.page-node-8 .principal h1#page-title {
+  margin-top: 0;
+  display: block;
+}
+
+.page-node-8 .principal label {
+  font-weight: 600;
+  width: 150px;
+  display: block;
+  float: left;
+  text-align: right;
+}
+
+.page-node-8 .principal .form-control {
+  width: 550px;
+}
+
+.page-node-8 .principal .form-actions {
+  text-align: center;
+}
+
+.page-node-8 .principal .webform-confirmation {
+  text-align: center;
+}
+
+/*--- RODAPE ------------------------------------------*/
+footer {
+  float: left;
+  width: 100%;
+  margin-top: 75px;
+  border-top: 1px solid #ccc;
+  background: #2d2d2d;
+  color: #fff;
+  padding: 50px 0;
+}

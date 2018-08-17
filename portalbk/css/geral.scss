@@ -1,0 +1,460 @@
+$cinza1: #f5f5f5;
+$cinza2: #cccccc;
+$cinza3: #a2a2a2;
+$azul: #1d5691;
+$laranja: #ed7901;
+$vermelho: #eb1429;
+$preto: #2d2d2d;
+
+
+body{
+	font-family: 'Open Sans',serif;
+	font-size: 16px;
+	line-height: 24px;
+	color: $preto;
+}
+
+
+h3{
+	color: $preto;
+	font-weight: 600;
+	font-size: 21px;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+}
+
+a{
+	color: $laranja;
+	font-weight: 600;
+	&:hover{color: $preto;}
+}
+
+button,
+.btn,
+button.btn-primary,
+.btn-info{
+	background: $laranja;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-radius: 0;
+	font-size: 18px;
+	border: none;
+	color: #fff;
+
+	&:hover{
+		background: $preto;
+		color: #fff;
+	}
+}
+
+.principal{
+	float: left;
+	width: 100%;
+	padding-top: 100px;
+
+	h1#page-title{
+		font-weight: 700;
+		text-align: center;
+		margin: 80px 0 50px 0;
+		display: none;
+	}
+}
+
+.nav-tabs{
+	font-family: 'Montserrat', sans-serif;
+}
+
+/* paginacao */
+.pagination > li:first-child > span,
+.pagination > li:last-child > a,
+.pagination > li:last-child > span{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+    background-color: $azul;
+    border-color: $azul;
+}
+.pagination > li > a,
+.pagination > li > span {
+    color: $azul;
+}
+
+
+.help-block,
+.ckeditor_links{display: none !important;}
+
+/*--- TOPO -----------------------------------------------*/
+header{
+	width: 100%;
+	float: left;
+	background: transparent url(../img/header-footer.png) center 26px repeat-x;
+
+	#block-system-main-menu{
+		float: left;
+		width: 100%;
+	}
+
+	.logo{
+		float: left;
+		margin-top: 20px;
+
+		a{
+			display: block;
+			text-indent: -5000em;
+			width: 104px;
+			height: 104px;
+			background: transparent url(../img/logo-bk.png) top center no-repeat;
+			background-size: 100%;
+		}
+	}
+
+	h1{
+		font-weight: bold;
+		font-size: 26px;
+		text-transform: uppercase;
+		margin: 55px 25px 0 25px;
+		float: left;
+		color: #fff;
+		text-align: center;
+
+	}
+
+	.region-header{
+		float: left;
+		width: 100%;
+	}
+
+	ul.menu.nav{
+		display: block;
+		width: 100%;
+		background: transparent;
+		float: left;
+		text-align: center;
+
+		margin: 5px 0 10px 0;
+
+		li{
+			width: auto;
+			display: inline-block;
+			text-align: center;
+			font-size: 16px;
+			a {
+				display: block;
+				color: #fff;
+				text-transform: uppercase;
+				font-family: 'Montserrat', sans-serif;
+				transition: all .2s;
+
+				@media(max-width: 1199px){
+					padding: 3.7vh 0 !important;
+				}
+
+				&:hover {
+					background: #e45800;
+					color: #fff;
+				}
+			}
+		}
+
+		li.active a{
+			background: $laranja;
+		}
+
+	}
+}
+
+
+/*--- PAGINA GENERICA ----------------------------*/
+.not-front{
+	.principal{
+		float: left;
+		width: 100%;
+
+		label{font-weight: 600;}
+		p{	margin-bottom: 25px;}
+	}
+}
+
+
+/*--- HOME ------------------------------------------------*/
+
+.front{
+
+	.principal{
+		float: left;
+		width: 100%;
+
+		.intro{
+			float: left;
+			margin: 0 0 50px 0;
+		}
+		.chamadas{
+
+			h3{
+				font-weight: 600;
+				color: #fff;
+			}
+			.col-sm-4{
+				background: $laranja;
+				padding: 25px;
+				width: 30%;
+				margin: 1.5%;
+				min-height: 250px;
+
+				p{
+						font-weight: normal !important;
+				}
+
+				a{
+					color: #fff;
+					&:hover{
+						text-decoration: none;
+					}
+				}
+				&:hover{
+					background: $preto;
+				}
+			}
+		}
+	}
+}
+
+
+.front.not-logged-in{
+	background: #f5f5f5;
+
+	.principal{
+		padding: 50px 0;
+		.container{
+				max-width: 500px;
+
+				.block.block-system.clearfix{display: none;}
+
+				#block-user-login{
+					padding: 50px;
+					background: #fff;
+					box-shadow: 3px 3px 3px #ccc;
+					border-radius: 5px;
+				}
+		}
+	}
+}
+
+/*--- MEUS CONTEUDOS ------------------------------------------------*/
+
+.page-contents{
+
+	.principal{
+
+		.pane-custom.pane-1{
+			text-align: center;
+			float: left;
+			width: 100%;
+
+			a{
+				display: inline;
+				background: $laranja;
+				color: #fff;
+				padding: 20px 50px;
+				font-size: 21px;
+				margin-top: 100px;
+			}
+		}
+		.pane-views{
+			margin-bottom: 100px;
+		}
+		.view-spots-aprovados{
+			audio{
+				width: 70%;
+			}
+		}
+	}
+}
+
+/*--- PAGINA DE UM CONTEUDO INDIVIDUAL ------------------------------------------------*/
+.node-type-conteudo{
+	#edit-author--2,
+	#edit-comment-body .control-label{display: none;}
+
+	.principal{
+		.container{
+			max-width: 900px;
+		}
+
+		#comments{
+
+			h2.title{
+				margin: 50px 0;
+				background: #f5f5f5;
+				padding: 20px;
+				font-weight: 600;
+			}
+			h2.comment-form{
+				padding: 0;
+				font-weight: normal;
+				background: transparent;
+				margin: 0 0 0 20px;
+			}
+
+			.comment{
+				position: relative;
+				padding-bottom: 20px;
+				padding-bottom: 50px;
+				margin-bottom: 50px;
+				border-bottom: 1px solid #ccc;
+
+				.content{
+					font-size: 18px;
+				}
+
+				.submitted{
+					font-size: 12px;
+					position: absolute;;
+					bottom: 0;
+				}
+
+				h3,
+				.permalink,
+				.links{display: none;}
+			}
+
+		}
+
+
+	}
+}
+
+/*--- CRIAR CONTEUDO ------------------------------------------------*/
+.page-node-add-conteudo{
+	#edit-field-status,
+	.ckeditor_links,
+	#edit-body-und-0-format,
+	.vertical-tabs{
+		display: none;
+	}
+	.principal{
+		.container{
+			max-width: 900px;
+		}
+	}
+}
+
+/*--- EDITAR CONTEUDO ------------------------------------------------*/
+.page-node-edit.node-type-conteudo{
+	.ckeditor_links,
+	#edit-body-und-0-format,
+	.vertical-tabs{
+		display: none;
+	}
+	.principal{
+		.container{
+			max-width: 900px;
+		}
+	}
+}
+
+/*--- EXCLUIR CONTEUDO ------------------------------------------------*/
+.page-node-delete{
+	.nav-tabs{
+		display: none;
+	}
+}
+
+
+/*--- SUPORTE FAQ ------------------------------------------------*/
+.page-suporte{
+	.principal{
+		.container{
+			max-width: 900px;
+		}
+	}
+}
+
+/*--- AUDIENCIA ------------------------------------------------*/
+.page-playing{
+	.principal{
+		form{
+			width: 100%;
+			float: left;
+			margin-bottom: 50px;
+		}
+
+		thead{
+			font-weight: 600;
+			text-transform: uppercase;
+		}
+
+		td{text-align: center;}
+
+		td:first-child{text-align: left;}
+
+		a.email{
+			display: inline-block;
+			width: 27px;
+			height: 22px;
+			text-indent: -5000em;
+			margin-right: 25px;			
+			background: transparent url(../img/icon-email.png) center center no-repeat;
+		}
+		a.wpp{
+			display: inline-block;
+			width: 22px;
+			height: 22px;
+			text-indent: -5000em;
+			background: transparent url(../img/icon-wpp.png) center center no-repeat;
+		}
+	}
+}
+
+/*--- EXCLUIR CONTEUDO ------------------------------------------------*/
+.page-node-8{
+	.principal{
+		.container{max-width: 900px;}
+
+		.tabs,
+		header,
+		.links{display: none;}
+
+		h1#page-title{
+			margin-top: 0;
+			display: block;
+		}
+
+		label{
+			font-weight: 600;
+			width: 150px;
+			display: block;
+			float: left;
+			text-align: right;
+		}
+		.form-control{
+		    width: 550px;
+		}
+		.form-actions{
+			text-align: center;
+		}
+		.webform-confirmation{
+			text-align: center;
+		}
+	}
+}
+
+
+/*--- RODAPE ------------------------------------------*/
+footer{
+	float: left;
+	width: 100%;
+	margin-top: 75px;
+	border-top: 1px solid #ccc;
+	background: #2d2d2d;
+	color: #fff;
+	padding: 50px 0;
+}

@@ -1,0 +1,16 @@
+name = portalbk
+description = Tema exclusivo para o Portal Burger King
+package = Core
+core = 7.x
+
+regions[header] = Header
+regions[sidebar] = Sidebar
+regions[content] = Content
+regions[footer] = Footer
+
+base theme = bootstrap
+
+stylesheets[all][] = css/geral.css
+
+project = "drupal"
+datestamp = "1328134560"
