@@ -301,7 +301,7 @@ header{
 				padding: 0;
 				font-weight: normal;
 				background: transparent;
-				margin: 0 0 0 20px;
+				//margin: 0 0 0 20px;
 			}
 
 			.comment{
@@ -401,7 +401,7 @@ header{
 			width: 27px;
 			height: 22px;
 			text-indent: -5000em;
-			margin-right: 25px;			
+			margin-right: 25px;
 			background: transparent url(../img/icon-email.png) center center no-repeat;
 		}
 		a.wpp{
@@ -445,6 +445,16 @@ header{
 			text-align: center;
 		}
 	}
+}
+
+
+/*--- PAGINA DO USUARIO ------------------------------------------*/
+.page-user-me{
+  .tabs,
+  #edit-locale,
+  #edit-timezone{display: none;}
+
+	.principal .container{max-width: 550px;}
 }
 
 

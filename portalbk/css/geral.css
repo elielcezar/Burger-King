@@ -292,7 +292,6 @@ header ul.menu.nav li.active a {
   padding: 0;
   font-weight: normal;
   background: transparent;
-  margin: 0 0 0 20px;
 }
 
 .node-type-conteudo .principal #comments .comment {
@@ -423,6 +422,17 @@ header ul.menu.nav li.active a {
 
 .page-node-8 .principal .webform-confirmation {
   text-align: center;
+}
+
+/*--- PAGINA DO USUARIO ------------------------------------------*/
+.page-user-me .tabs,
+.page-user-me #edit-locale,
+.page-user-me #edit-timezone {
+  display: none;
+}
+
+.page-user-me .principal .container {
+  max-width: 550px;
 }
 
 /*--- RODAPE ------------------------------------------*/
